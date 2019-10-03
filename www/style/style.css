@@ -1,0 +1,48 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    padding: 0.6rem;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: rgb(34, 31, 31);
+}
+
+h2 {
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+i {
+    font-size: 1.5rem;
+    color: #ffc107;
+}
+
+.brand {
+    font-style: italic;
+    font-family: cursive;
+    color: #ffc107;
+}
