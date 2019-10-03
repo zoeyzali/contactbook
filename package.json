@@ -1,0 +1,28 @@
+{
+  "name": "vanilla-js-contacts",
+  "version": "1.0.0",
+  "description": "vanilla javascript contactbook schoolproject",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoeyzali/contactbook.git"
+  },
+  "keywords": [
+    "Vanilla",
+    "JS",
+    "Express"
+  ],
+  "author": "Zoe Ali",
+  "license": "MIT ",
+  "bugs": {
+    "url": "https://github.com/zoeyzali/contactbook/issues"
+  },
+  "homepage": "https://github.com/zoeyzali/contactbook#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.3"
+  }
+}
