@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <title>
+            Kontaktbok
+        </title>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto|Open+Sans&display=swap">
+        <link rel="stylesheet" href="./style/reset.css">
+        <link href="./style/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header>
+            <h4 class="brand"><i class="fas fa-phone"></i>bok</h4>
+        </header>
+
+        <!-- Button for form data -->
+        <button id="submitBtn" class="btn">Submit</button>
+        <!-- Button for main JS/ form data -->
+
+
+
+        <button id="getText">Get Text</button>
+        <button id="getJson">Kontakter</button>
+        <button id="getPosts">Get Posts</button>
+        <div id="output"></div>
+
+
+        <!-- SCRIPT -->
+        <script>
+            document.getElementById( 'getText' ).addEventListener( 'click', getText )
+            document.getElementById( 'getJson' ).addEventListener( 'click', getJson )
+            document.getElementById( 'getPosts' ).addEventListener( 'click', getPosts )
+
+
+            function getText() {
+                fetch( 'sample.txt' )
+                    .then( ( res ) => res.text() )
+                    .then( ( data ) => {
+                        // console.log( data )
+                        document.getElementById( 'output' ).innerHTML = data
+                    } )
+                    .catch( ( err ) => console.log( err ) )
+            };
+
+
+            function getJson() {
+                fetch( 'contacts.json' )
+                    .then( ( res ) => res.json() )
+                    .then( ( data ) => {
+                        console.log( data )
+                        let output = '<h3>Mina kontakter</h3>';
+                        data.forEach( function ( contact ) {
+                            output +=
+                                `<ul> 
+                            <img src="/images/avatar.png" alt="chip" width="42" height="42" class="chip">
+                            <li> ${contact.firstName} ${contact.lastName} </li>
+                             <li>Telefon: ${contact.phoneNumber}</li>
+                            <li>E-post: ${contact.email}</li>
+                            <li> ${contact.address}
+                                </li>
+                             <li>${contact.city}</li>
+                            </ul>    
+                                `
+                        } );
+                        document.getElementById( 'output' ).innerHTML = output;
+                    } )
+            };
+
+            function addContact() {
+                document.getElementById( 'x' ).innerHTML = x;
+            }
+
+            function editContact() {
+
+            }
+
+            function deleteContact() {
+
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/c5b20a45f1.js" crossorigin="anonymous" attribute="SameSite"></script>
+        <script src="./main.js"></script>
+    </body>
+
+</html>

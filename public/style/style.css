@@ -1,0 +1,123 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    padding: 0.6rem;
+}
+
+h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: rgb(24, 23, 23);
+}
+
+h2 {
+    font-size: 1.7rem;
+    letter-spacing: 0.2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+i {
+    font-size: 1.5rem;
+    color: #ffc107;
+}
+
+.brand {
+    font-style: italic;
+    font-family: cursive;
+    color: #ffc107;
+}
+
+.contact-page,
+.contact-form {
+    background-color: whitesmoke;
+    border: 1px solid #ffc107;
+    margin-left: 2rem;
+    padding: 1rem;
+    box-shadow: 1px 2px 2px #eeeeee;
+    width: fit-content;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+
+.contact-card-input {
+    border-color: 1px solid#ffc107;
+    font-size: 0.8rem;
+    height: 1.5rem;
+}
+
+.btn {
+    background-color: #ffc107;
+    color: #fff;
+    font-size: 0.8rem;
+    border-radius: 0.5rem;
+    display: block;
+    margin-top: 0.2rem;
+    border: none;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    padding: 0.4rem;
+}
+
+.btn:hover,
+a:hover {
+    opacity: 0.7;
+}
+
+/* 
+ul {
+    border: 1px solid #eee;
+    box-shadow: 1px 3px 2px #eeeeee;
+    background-color: #fff;
+    padding: 1.2rem 1rem;
+} */
+
+ul {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 1.2rem 1rem;
+    height: auto;
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+li {
+    list-style: none;
+    font-size: 0.9rem;
+    display: grid;
+    margin-top: 0.2rem;
+}
+
+#output {
+    padding: 1rem;
+}
