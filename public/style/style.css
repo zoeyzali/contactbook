@@ -20,6 +20,19 @@ header {
     padding: 0.6rem;
 }
 
+.fa-phone:before {
+    font-size: 1.3rem;
+    color: #ffc107;
+    display: inline-flex;
+}
+
+.brand {
+    font-family: 'Homemade Apple',
+        cursive;
+    color: darkgrey;
+
+}
+
 h1 {
     font-size: 2rem;
     letter-spacing: 0.2rem;
@@ -32,67 +45,109 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+    margin-inline-start: 1rem;
+
 }
 
-i {
-    font-size: 1.5rem;
-    color: #ffc107;
+.main-container {
+    width: 100%;
+    height: 100vh;
 }
 
-.brand {
-    font-style: italic;
-    font-family: cursive;
-    color: #ffc107;
+.contact-page {
+    height: 100%;
+    width: 100%;
 }
 
-.contact-page,
 .contact-form {
     background-color: whitesmoke;
-    border: 1px solid #ffc107;
-    margin-left: 2rem;
-    padding: 1rem;
-    box-shadow: 1px 2px 2px #eeeeee;
-    width: fit-content;
+    box-shadow: 2px 2px 4px #ccc2c2;
+    width: 60%;
+    margin: auto;
     justify-content: center;
-    padding-top: 2rem;
+    padding: 2rem 3rem 3rem 3rem;
 }
 
 
-.contact-card-input {
-    border-color: 1px solid#ffc107;
-    font-size: 0.8rem;
-    height: 1.5rem;
+#nameInput,
+#phoneInput,
+#emailInput {
+    border: 1px solid#ffc107;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-family: 'Homemade Apple',
+        cursive;
+    font-size: 0.9rem;
+    height: 2rem;
+    display: block;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    outline: 0;
+    margin-block-start: 0.4rem;
+}
+
+.alert-success {
+    color: #14e014;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin: auto;
+}
+
+.alert-danger {
+    color: #ee2020;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin: auto;
 }
 
 .btn {
-    background-color: #ffc107;
+    background-color: darkgrey;
     color: #fff;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 0.5rem;
-    display: block;
-    margin-top: 0.2rem;
+    display: inline-block;
+    margin-top: 0.5rem;
     border: none;
     outline: 0;
     text-align: center;
     cursor: pointer;
-    width: fit-content;
-    padding: 0.4rem;
+    padding: 0.3rem;
+    margin-inline-start: 0.2rem;
 }
 
 .btn:hover,
 a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
-/* 
-ul {
-    border: 1px solid #eee;
-    box-shadow: 1px 3px 2px #eeeeee;
-    background-color: #fff;
-    padding: 1.2rem 1rem;
-} */
+#submitBtn {
+    background-color: #ffc107;
+    ;
+    width: 100%;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+}
+
+.delete-btn {
+    background-color: #ee2020;
+    color: #fff;
+    font-size: 0.9rem;
+    margin: 0.8rem;
+    border-radius: 0.5rem;
+    padding: 0 0.8rem;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 0.8rem;
+    border-radius: 0.5rem;
+    padding: 0 0.2rem;
+}
 
 ul {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -103,13 +158,13 @@ ul {
     height: auto;
 }
 
-.chip img {
+/* .chip img {
     float: left;
     margin: 0 10px 0 -25px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-}
+} */
 
 li {
     list-style: none;
@@ -120,4 +175,27 @@ li {
 
 #output {
     padding: 1rem;
+}
+
+/* rendered contacts  */
+.contact-headings {
+    padding: 1rem 1rem 0 1.5rem;
+    text-align: center;
+    font-family: 'Homemade Apple',
+        cursive;
+    font-size: 1rem;
+    margin: auto;
+}
+
+#renderedContact {
+    background-color: #fff;
+    width: fit-content;
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 1rem;
+    box-shadow: 2px 2px 4px #ccc2c2;
+}
+
+.toggled {
+    display: none;
 }
