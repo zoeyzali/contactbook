@@ -8,9 +8,7 @@
             Kontaktbok
         </title>
         <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Montserrat|Homemade+Apple|Raleway|Roboto|Open+Sans&display=swap">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            href="https://fonts.googleapis.com/css?family=Montserrat|Homemade+Apple|Open+Sans&display=swap">
         <link rel="stylesheet" href="./style/reset.css">
         <link href="./style/style.css" rel="stylesheet" />
     </head>
@@ -20,31 +18,12 @@
             <i class="fa fa-phone">
                 <h3 class="brand">Kontaktbok</h3>
             </i>
+            <button type="submit" id="toggleForm" class="btn" onclick=toggleForm()>+</button>
         </header>
-
-        <!-- Button for form data -->
-        <button id="submitBtn" class="btn">Spara</button>
-        <!-- Button for main JS/ form data -->
-
-        <!-- Main buttons  -->
-        <button id="getText" class="btn">Get Text</button>
-        <button id="getJson" class="btn">Kontakter</button>
-        <div id="output"></div>
-        <!-- SCRIPT -->
-        <script>
-            document.getElementById( 'getText' ).addEventListener( 'click', getText )
-
-            function getText() {
-                fetch( 'sample.txt' )
-                    .then( ( res ) => res.text() )
-                    .then( ( data ) => {
-                        // console.log( data )
-                        document.querySelector( 'form' ).innerHTML = data
-                    } )
-                    .catch( ( err ) => console.log( err ) )
-            };
-        </script>
-        <script src="./main.js"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="js/startpage.js"></script>
+        <script src="js/main.js"></script>
     </body>
 
 </html>
