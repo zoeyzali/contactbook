@@ -11,9 +11,8 @@ const startpage = () => {
     output.setAttribute( 'id', 'output' )
 
     let heading = document.createElement( 'h2' )
-    heading.innerHTML = "Välkommen till min kontaktbok"
+    heading.innerHTML = "Välkommen till  kontaktboken"
     output.appendChild( heading )
-
 }
 
 
