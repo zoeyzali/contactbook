@@ -10,7 +10,7 @@ const startpage = ( () => {
     jumbo.setAttribute( 'class', 'jumbo' )
 
     let heading = document.createElement( 'h2' )
-    heading.innerText = "Välkommen till  kontaktboken"
+    heading.innerText = "Välkommen till din kontaktbok"
     jumbo.appendChild( heading )
 
 } )();
