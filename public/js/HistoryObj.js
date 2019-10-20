@@ -4,14 +4,13 @@ class History {
     }
 
     history( contact, id ) {
-        console.log( id, 'effing id' )
         contact.history.forEach( ( element ) => {
+            // console.log( element.id )
             let historyContainer = document.querySelector( '.historyContainer' )
             let historySection = document.createElement( 'div' )
             historyContainer.append( historySection )
             historySection.innerHTML
             historySection.setAttribute( 'class', 'historySection' )
-            console.log( element )
         } )
 
     }

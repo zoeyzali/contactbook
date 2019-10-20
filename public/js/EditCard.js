@@ -57,16 +57,16 @@ class EditContactCard {
         cancelBtn.className = 'cancelBtn'
         cancelBtn.innerHTML = 'Avbryt'
 
-        let wrapperHistory = document.createElement( 'div' );
-        body.append( wrapperHistory );
-        wrapperHistory.innerHTML;
-        wrapperHistory.setAttribute( 'class', 'wrapperHistory' );
-        wrapperHistory.setAttribute( 'data-id', id )
+        let historyContainer = document.createElement( 'div' );
+        body.append( historyContainer );
+        historyContainer.innerHTML;
+        historyContainer.setAttribute( 'class', 'historyContainer' );
+        historyContainer.setAttribute( 'data-id', id )
 
-        let historyTitle = document.createElement( 'h1' );
-        wrapperHistory.append( historyTitle );
-        historyTitle.innerHTML = 'Historik';
-        historyTitle.setAttribute( 'id', 'title' );
+        let historyContent = document.createElement( 'h1' );
+        historyContainer.append( historyContent );
+        historyContent.innerHTML = 'Historik';
+        historyContent.setAttribute( 'id', 'heading' );
     }
 }
 

@@ -97,7 +97,6 @@ addMoreEmails = listen( 'click', '.emailBtn', e => {
 deleteAddPhone = listen( 'click', '.removeNrBtn', e => {
     let el = e.target.previousSibling
     let el2 = e.target
-    console.log( el, el2, 'yao elements' )
     el.remove()
     el2.remove()
 } )
@@ -132,13 +131,11 @@ let saveCont = listen( 'click', '.updateForm', e => {
 
 let cancelListener = listen( 'click', '.cancelBtn', e => {
     const target = e.target
-    console.log( target, 'cancel clicked' )
     this.cancelEdit()
 } )
 
 let getHistory = listen( 'click', '.historyBtn', () => {
-    console.log( 'history clicked' )
-    this.history( contact, id )
+    // console.log( 'history clicked' )
 } )
 
 

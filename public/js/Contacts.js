@@ -91,7 +91,7 @@ function updateForm( id ) {
     // replacing old contact with new and insert to history[]
     // updated view visible on refresh due to some edit bug// 
     let editContactCard = new Contact( id, name, phoneNumber, email )
-    console.log( editContactCard, 'the edited contact' )
+    console.log( editContactCard, 'edited boomaye' )
     const contactIndex = contacts.findIndex( contact => contact.id === Number( id ) )
     let contact = contacts[contactIndex]
     const addContactToHistory = { ...contact, history: undefined }
