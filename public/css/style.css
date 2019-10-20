@@ -1,0 +1,356 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: white;
+    padding: 0.9rem;
+}
+
+i.fa-phone:before {
+    font-size: 1.5rem;
+    color: #ffc107;
+    display: inline-flex;
+    margin-left: 0.9rem;
+}
+
+.brand-wrapper {
+    margin-left: 1.2rem;
+}
+
+.brand {
+    font-family: 'Homemade Apple',
+        cursive;
+    color: darkgrey;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: rgb(24, 23, 23);
+    margin: auto 1rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    padding: 1.4rem 3rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -50px;
+    padding-bottom: 1rem;
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.jumbo {
+    background-color: whitesmoke;
+    height: auto;
+    margin: auto;
+    padding: 1rem;
+    width: 100%;
+    position: relative;
+}
+
+.form-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-form {
+    /* display: none; */
+    height: auto;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 15px 0 #ccc2c2;
+    border-radius: 0.3rem;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    padding: 2rem 3rem 3rem 3rem;
+    margin-top: 3rem;
+    visibility: hidden;
+
+}
+
+
+.contact-form-inputs-name,
+.contact-form-inputs-phoneNumber,
+.contact-form-inputs-email {
+    border: 1px solid#ffc107;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-family: 'Homemade Apple',
+        cursive;
+    font-size: 1rem;
+    height: 2.2rem;
+    display: block;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    outline: 0;
+    margin-block-start: 0.4rem;
+}
+
+.alert-success {
+    color: #14e014;
+    background-color: #fff;
+    font-size: 1.2rem;
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem;
+
+}
+
+.alert-danger {
+    color: #ee2020;
+    background-color: #fff;
+    font-size: 1.2rem;
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.btn {
+    color: #ffc107;
+    background-color: #fff;
+    font-size: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 60px;
+    top: 0;
+    border: none;
+    outline: 0;
+    text-align: center;
+    justify-content: space-around;
+    cursor: pointer;
+    opacity: 0.9;
+    margin: 0.2rem;
+}
+
+/* .phoneBtn,
+.emailBtn {
+    color: #ffc107;
+    font-size: 1rem;
+    background-color: #fff;
+    border-radius: 50%;
+    outline: 0;
+} */
+
+#submitBtn {
+    background-color: #ffc107;
+    width: 100%;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    border: none;
+    outline: 0;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.3rem;
+}
+
+#submitBtn:hover,
+.deleteBtn:hover,
+.editBtn:hover {
+    opacity: 0.8;
+}
+
+.deleteBtn {
+    display: inline-flex;
+    background-color: #ee2020;
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 0.8rem 0.2rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem 1.2rem;
+    font-family: 'Montserra',
+        sans-serif;
+}
+
+.editBtn,
+.historyBtn {
+    display: inline-flex;
+    background-color: #fff;
+    font-size: 1.2rem;
+    color: #ffc107;
+    margin: 0.8rem 0.2rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem 1.2rem;
+}
+
+.saveEditBtn {
+    display: inline-flex;
+    color: #14e014;
+    background-color: #fff;
+    font-size: 0.9rem;
+    margin: 0.7rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    outline: 0;
+
+}
+
+/* rendered contacts  */
+ul {
+    width: 50%;
+    padding: 1.5rem 1.2rem;
+    height: auto;
+    font-family: 'Homemade Apple',
+        cursive;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.8rem;
+    background-color: #ffc107;
+    box-shadow: 6px 5px 2px 1px #ccc2c2;
+    border-radius: 0.5rem;
+    vertical-align: middle;
+    position: relative;
+}
+
+
+/*  responsive  */
+/* @media screen and (min-width: 320px) {
+    h2 {
+        margin: 30px -110px
+    }
+} */
+
+
+@media screen and (max-width: 570px) {
+    ul {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    h2 {
+        width: fit-content;
+        font-size: 1rem;
+        margin: 30px -110px
+    }
+
+    .btn,
+    #showFormBtn {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+    }
+
+    .brand-wrapper {
+        margin-left: 0.6rem;
+    }
+}
+
+li {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0.2rem 0;
+    /* box-shadow: 1px 1px 3px #fff; */
+}
+
+#output {
+    margin-top: 2rem;
+}
+
+.show {
+    visibility: visible;
+}
+
+
+
+/* Table  */
+table {
+    margin-top: 1rem;
+    margin-bottom: 15px;
+    margin: auto;
+    border: 1px solid #ffc107;
+    visibility: hidden;
+}
+
+input {
+    margin: 5px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    font: 1rem;
+    padding: 6px 10px;
+}
+
+th {
+    font-weight: bold
+}
+
+table [type="text"],
+table [type="email"],
+table [type="number"] {
+    display: block;
+    width: 90px;
+}
+
+
+.editWrap {
+    background-color: whitesmoke;
+    width: 80%;
+    padding: 2.5rem 0;
+    border: 1px solid #c4c3c0;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}
+
+.editContactDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+}
+
+#editName,
+#editEmail,
+#editPhone {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.historyContainer {
+    border: 1px solid #ffc107;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 5px;
+    max-height: 500px;
+    overflow-x: hidden;
+    text-align: center;
+}
